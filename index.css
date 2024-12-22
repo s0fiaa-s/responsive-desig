@@ -1,0 +1,66 @@
+.hero {
+    background-color: #0a75c2;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  /* ================== MEDIA QUERIES ================== */
+  
+  /* Full HD (≥1920px) */
+  @media screen and (min-width: 1920px) {
+    body {
+      background-color: rgb(224, 247, 250); /* azul claro */
+    }
+  
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* HD (1280px a 1919px) */
+  @media screen and (min-width: 1280px) and (max-width: 1919px) {
+    body {
+      background-color: rgb(208, 240, 192); /* verde claro */
+    }
+  
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Tableta (768px a 1279px) */
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    body {
+      background-color: rgb(255, 224, 178); /* naranja claro */
+    }
+  
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Teléfono (<768px) */
+  @media screen and (max-width: 767px) {
+    body {
+      background-color: rgb(248, 187, 208); /* rosa claro */
+    }
+  
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
